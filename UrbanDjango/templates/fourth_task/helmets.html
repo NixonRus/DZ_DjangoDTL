@@ -1,0 +1,30 @@
+<!--Страница выбора шлемов-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Купить шлем</title>
+</head>
+
+{% extends 'fourth_task/menu.html' %}
+
+{% block pagename %}
+    <h1>Выбрать шлем</h1>
+{% endblock %}
+
+{% block menu %}
+{{ block.super }}
+{% endblock %}}
+
+{% block content %}
+
+{% for i in helmets %}
+    <p>{{ i }}  <button>Купить</button></p>
+{% endfor %}
+<p><a href="/platform/"><button>Вернуться обратно</button></a></p>
+{% endblock %}
+
+
+
+</html>
+

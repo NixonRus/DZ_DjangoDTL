@@ -1,0 +1,21 @@
+<!--Корзина магазина-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+</head>
+{% extends 'fourth_task/menu.html' %}
+
+{% block pagename %}<h1>Корзина</h1>{% endblock %}
+
+{% block menu %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+<h2>Ваша корзина пуста</h2>
+<p><a href="/platform/"><button>Вернуться обратно</button></a></p>
+{% endblock %}
+
+</html>
